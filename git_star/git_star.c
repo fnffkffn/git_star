@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <Windows.h>
 #include <conio.h>
+
+#include <stdlib.h>
+
 #define LEFT 75
 #define RIGHT 77
 #define UP 72
