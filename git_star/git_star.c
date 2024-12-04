@@ -43,13 +43,18 @@ void main(void) {
 				nkey = _getch();
 				switch (nkey) {
 				case UP:
-					system("cls");  GotoXY(x, --y); printf("¡Ú"); break;
+					if (y > 0) y--;
+					break;
 				case LEFT:
-					system("cls");  GotoXY(x = x - 2, y); printf("¡Ú"); break;
+					if (x > 0) x -= 2;
+					break;
 				case RIGHT:
-					system("cls");  GotoXY(x = x + 2, y); printf("¡Ú"); break;
+					if (x < 78) x += 2;
+					break;
 				case DOWN:
-					system("cls");  GotoXY(x, ++y); printf("¡Ú"); break;
+					if (y < 24) y++;
+					break;
+				
 				}
 			}
 		}
