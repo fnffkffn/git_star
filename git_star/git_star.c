@@ -46,8 +46,9 @@ void main(void) {
 					system("cls");  GotoXY(x = x - 2, y); printf("¡Ú"); break;
 				case RIGHT:
 					system("cls");  GotoXY(x = x + 2, y); printf("¡Ú"); break;
-				case DOWN:
-					system("cls");  GotoXY(x, ++y); printf("¡Ú"); break;
+				case DOWN: //DOWN Å°
+					if (y < 24) y++;
+					break;
 				}
 			}
 		}
