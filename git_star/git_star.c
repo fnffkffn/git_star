@@ -58,6 +58,15 @@ void main(void) {
 				}
 			}
 			else {
+				switch (nkey) {
+				case DIAG_UP_LEFT:
+					if (x > 0 && y > 0) { x -= 2; y--; }
+					break;
+				case DIAG_UP_RIGHT:
+					if (x < 78 && y > 0) { x += 2; y--; }
+					break;
+
+				}
 
 			}
 		}
