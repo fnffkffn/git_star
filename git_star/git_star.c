@@ -76,6 +76,9 @@ void main(void) {
 				}
 
 			}
+			system("cls");
+			GotoXY(x, y);
+			printf("¡Ú");
 
 		}
 	}
