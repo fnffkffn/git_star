@@ -37,8 +37,11 @@ void main(void) {
 			if (nkey == ARROW) {
 				nkey = _getch();
 				switch (nkey) {
+					// UP Å°
 				case UP:
-					system("cls");  GotoXY(x, --y); printf("¡Ú"); break;
+					if (y > 0) y--;
+					break;
+
 				case LEFT:
 					system("cls");  GotoXY(x = x - 2, y); printf("¡Ú"); break;
 				case RIGHT:
