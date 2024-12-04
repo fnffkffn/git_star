@@ -7,6 +7,11 @@
 #define DOWN 80
 #define ARROW 224
 
+#define DIAG_UP_LEFT 113   // Q Ű
+#define DIAG_UP_RIGHT 101  // E Ű
+#define DIAG_DOWN_LEFT 122 // Z Ű
+#define DIAG_DOWN_RIGHT 99 // C Ű
+
 void GotoXY(int x, int y) {
 	COORD Pos;
 	Pos.X = x;
