@@ -46,11 +46,16 @@ void main(void) {
 					if (x > 0) x -= 2;
 					break;
 				case RIGHT:
-					system("cls");  GotoXY(x = x + 2, y); printf("¡Ú"); break;
+					if (x < 78) x += 2;
+					break;
 				case DOWN: //DOWN Å°
 					if (y < 24) y++;
 					break;
+
 				}
+				system("cls");
+				GotoXY(x, y);
+				printf("¡Ú");
 			}
 		}
 	}
