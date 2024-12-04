@@ -51,6 +51,7 @@ void main(void) {
 			}
 		}
 	}
+	Sleep(delay); // 이동 시 딜레이 추가
 
 
 }
