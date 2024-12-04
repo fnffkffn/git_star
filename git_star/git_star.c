@@ -30,27 +30,39 @@ void setcolor(unsigned short text, unsigned short back) {
 int x = 30, y = 7;
 
 void main(void) {
+    CursorView(0);
+    GotoXY(x, y);
+    setcolor(6, 0);
+    printf("★");
 
-	CursorView(0); GotoXY(x, y); setcolor(6, 0); printf("★");
-
-	while (1) {
-		if (_kbhit()) {
-			int nkey = _getche();
-			if (nkey == ARROW) {
-				nkey = _getch();
-				switch (nkey) {
-				case UP:
-					system("cls");  GotoXY(x, --y); printf("★"); break;
-				case LEFT:
-					system("cls");  GotoXY(x = x - 2, y); printf("★"); break;
-				case RIGHT:
-					system("cls");  GotoXY(x = x + 2, y); printf("★"); break;
-				case DOWN:
-					system("cls");  GotoXY(x, ++y); printf("★"); break;
-				}
-			}
-		}
-	}
-
-
+    while (1) {
+        if (_kbhit()) {
+            int nkey = _getche();
+            if (nkey == ESC) {
+                printf("\nProgram exited successfully!\n");
+                break; // 루프를 종료하고 프로그램을 종료
+            }
+            if (nkey == ARROW) {
+                nkey = _getch();
+                switch (nkey) {
+                case UP:
+                    if (y > 0) y--;
+                    break;
+                case LEFT:
+                    if (x > 0) x -= 2;
+                    break;
+                case RIGHT:
+                    if (x < 78) x += 2;
+                    break;
+                case DOWN:
+                    if (y < 24) y++;
+                    break;
+                }
+                system("cls");
+                GotoXY(x, y);
+                printf("★");
+            }
+        }
+    }
+    
 }
