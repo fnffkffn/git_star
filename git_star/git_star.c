@@ -38,6 +38,8 @@ void main(void) {
 		if (_kbhit()) {
 			int nkey = _getche();
 			if (nkey == ARROW) {
+				int color = rand() % 15 + 1; // 랜덤 색상
+				setcolor(color, 0); // 색상 설정
 				nkey = _getch();
 				switch (nkey) {
 				case UP:
