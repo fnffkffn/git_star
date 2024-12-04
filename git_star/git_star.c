@@ -65,10 +65,18 @@ void main(void) {
 				case DIAG_UP_RIGHT:
 					if (x < 78 && y > 0) { x += 2; y--; }
 					break;
+				case DIAG_DOWN_LEFT:
+					if (x > 0 && y < 24) { x -= 2; y++; }
+					break;
+				case DIAG_DOWN_RIGHT:
+					if (x < 78 && y < 24) { x += 2; y++; }
+					break;
+
 
 				}
 
 			}
+
 		}
 	}
 
