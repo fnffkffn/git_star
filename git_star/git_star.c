@@ -7,6 +7,8 @@
 #define DOWN 80
 #define ARROW 224
 
+#define ESC 27 // ESC Ű
+
 void GotoXY(int x, int y) {
 	COORD Pos;
 	Pos.X = x;
