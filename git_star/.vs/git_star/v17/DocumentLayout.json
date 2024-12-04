@@ -24,7 +24,11 @@
               "RelativeDocumentMoniker": "git_star.c",
               "ToolTip": "C:\\git_star\\git_star\\git_star.c",
               "RelativeToolTip": "git_star.c",
+<<<<<<< HEAD
               "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAAAUAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACoAAAAVAAAAAAAAAA==",
+>>>>>>> feature/speed_control
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-12-03T07:04:10.344Z",
               "EditorCaption": ""
