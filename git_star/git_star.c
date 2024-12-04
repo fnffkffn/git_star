@@ -27,6 +27,8 @@ void setcolor(unsigned short text, unsigned short back) {
 
 int x = 30, y = 7;
 
+int delay = 100;  // 기본 속도 commit-2
+
 void main(void) {
 
 	CursorView(0); GotoXY(x, y); setcolor(6, 0); printf("★");
